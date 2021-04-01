@@ -1,0 +1,13 @@
+Training parameters
+epochs= 80 +20
+batch_size = 64 
+image_size = (100, 68)
+
+Optimization 
+Phase1
+80 .Adam(learning_rate = 0.01)
++ Phase2 (fine tuning)
+30 .Adam(learning_rate = 0.0005)
+
+TensorRT Conversion
+

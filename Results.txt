@@ -1,0 +1,74 @@
+MODELS ACCURACY
+HN1 accuracy =  96.32%%    ->this is what i get after trainig, but when i test it i get 98%99%
+    no preprocessing/data augmentation
+    KERAS: model evaluated 300 times,  with a validation split of 30% from its dataset
+           mean:0.9845873   %
+           median: 0.9848914 % 
+           std:  0.0031321738 %
+
+HN2 accuracy =96.31 %%  ->this is what i get after trainig, but when i test it i get 97%98%
+    preprocessing layers = random flip horizontal, random flip vertical, rescaling
+    KERAS: model evaluated 300 times,  with a validation split of 30% from its dataset
+           mean:0.97722006%
+           median: 0.9773371 %
+           std:0.0036076969 %
+
+PROCESSING RSULTS PER IMAGE, 300 iterations, in SECONDS
+KERAS
+    PC (TF 2.4.1)
+        HN1
+        mean: 0.022702837
+        median:  0.022389531 
+        std: 0.0012385611
+        
+        HN2
+        mean: 0.022665791
+        median:  0.022212744
+        std:  0.001316011
+    JETSON (TF 2.3.1)
+        HN1
+        mean: 0.19230218
+        median:  0.1851492
+        std:0.05807257
+        
+        HN2
+        mean: 0.18529645
+        median:  0.18171906
+        std: 0.037619017
+TFTRT
+    PC (TF 2.4.1)
+            HN1 32
+            mean: 0.00048108402
+            median:  0.0004746914
+            std: 6.0669932e-05
+            HN1 16
+            mean: 0.0005116125
+            median:  0.0005083084
+            std: 5.2410196e-05
+            
+            HN2 32
+            mean: 0.0005426718
+            median: 0.0005136728  
+            std: 0.00015389183
+            HN2 16
+            mean: 0.0005786105
+            median:  0.00051927567
+            std: 0.000175079   
+    JETSON (TF 2.3.1) 
+            HN1 32
+            mean: 0.011436968 
+            median:  0.010912657
+            std: 0.003035698
+            HN1 16
+            mean: 0.0105909575
+            median:  0.00967133 
+            std: 0.0117970845
+            
+            HN2 32
+            mean: 0.008660105
+            median:  0.008115649  
+            std: 0.0018032105
+            HN2 16
+            mean: 0.010518591
+            median: 0.009908199 
+            std: 0.0053657037

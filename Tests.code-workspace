@@ -1,0 +1,12 @@
+{
+    "folders": [
+        {
+            "name": "Tests",
+            "path": "."
+        }
+    ],
+    "settings": {
+        "python.pythonPath": "/bin/python3"
+
+    }
+}
